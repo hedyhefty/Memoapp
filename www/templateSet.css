@@ -1,0 +1,14 @@
+.btn-outline-dark.mbtn{
+    font-size: 25px;
+    width: inherit;
+}
+
+.center{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.btn-group.bgp{
+    width:inherit;
+}

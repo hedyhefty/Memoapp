@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta charset="utf-8">
+<meta name="description" content="checkList page.">
+<meta name="author" content="wst">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="">
+</head>
+
+<body onload="loadData()">
+    <div id="goBack" class="container">
+        <button onclick="goBackTemAct()" id="gbabtn" class="btn btn-primary custom-btn1 mbtn">
+            <!--i class="fas fa-chevron-left"--></i><b><i class="fas fa-chevron-circle-left"></i> back</b>
+        </button>
+        <br>
+    </div>
+    <p id="tt">templateTaskManagementPage</p>
+    <div id="mydiv"></div>
+    <div id="btndiv">
+        <!--input type="date" name="yaruhi" -->
+        <button onclick="addBox()" id="addbtn">Add</button>
+        <input type="text" id="conten" style="visibility:hidden"/>
+        <!--<button onclick="addContent()" id="okbtn" style="visibility: hidden">OK</button> -->
+        <br>
+        <!--button onclick="saveContent()" id="savebtn">Save</button -->
+    </div> 
+
+<!-- Place your content here -->
+<!-- SCRIPTS -->
+<script type="text/javascript" src="./tmpTakManage.js"></script>
+</body>
+</html>

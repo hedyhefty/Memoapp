@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body onload="loadCmp()">
+    <!-- Place your content here -->
+    <div class="container" id="classOneContainer">
+        <div class="MenuContainer">
+        <input id="menu" type="checkbox" id="menu" class="HiddenCheckbox" />
+        <label for="menu" class="MenuIcon"></label>
+        <h2 class="MenuHeader">Menu</h2>
+        <nav class="Menu">
+            <ul class="Menu-list">
+                <li class="Menu-new"><a href="./cmpsetting.html" class="Menu-link">新規登録</a></li>
+                <button class="Menu-button" , onclick="selectDelcmp()">削除</button>
+                <li class="Menu-setting"><a href="./allSettings.html" class="Menu-link"><i class="fab fa-whmcs"></i> 設定</a></li>
+                <li class="Menu-help"><a href="./help.html" class="Menu-link">アプリの説明</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="allctr" class="container">
+        <div id="hh" class="contianer">
+            <h3 id="hhh"><i class="fab fa-gulp"></i>AKIKO</h3>
+        </div>
+        <div id="today" class="container"></div>
+
+        <div class="container" id="c1">
+            <p>チェック未完了の会社</p>
+        </div>
+
+        <div id="unchecked" class="container"></div>
+
+        <div class="container" id="c2">
+            <p>チェックを完了した会社</p>
+        </div>
+        
+        <div id="checked" class="container"></div>
+
+<!--
+        テスト用
+        <div class="container">
+            <button class="btn btn-outline-primary" onclick="addTestSet()">test</button>
+        </div>
+-->
+    </div>
+    </div>
+
+
+    
+
+
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./utility.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./cmpsetting.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Place your content here -->
+    <div class="container">
+        <button id="backbtn" class="btn btn-dark" onclick="goBack()"><i class="fas fa-chevron-circle-left"></i> 戻る</button>
+    </div>
+
+    <div class="container center">
+        <div id="topdiv" class="container down">
+            
+            <h1 class="createNew">新規登録</h1>
+        </div>
+
+
+        <div id="inputBar0" class="container">
+            <p class="bigfont">会社名：</p>
+            <input style="text" class="form-control" placeholder="会社名を入力してください" id="cmpNameBox" />
+        </div>
+
+
+        <div id="inputBar1" class="container">
+            <p class="bigfont">イベント名：</p>
+            <div class="input-group">
+                <input style="text" class="form-control" placeholder="イベント名を入力してください" id="actNameBox">
+                <span class="input-group-btn">
+            <button onclick="creatcmp()" class="btn btn-dark" type="button"><i class="far fa-check-circle"></i> 決定</button>
+        </span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./cmpsetting.js"></script>
+    <script type="text/javascript" src="./utility.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./help.css">
+    <link rel="shortcut icon" href="">
+
+</head>
+
+<body>
+    <!-- Place your content here -->
+    
+    <button onclick="backHome()"><a href="./index.html">戻る</a></button>
+
+    <h1>アプリの説明</h1>
+
+    <p>このアプリでは就職活動に際して、説明会や選考会に向けたチェックリストの作成・管理 を行うことが出来ます。
+    </p>
+
+    <div class="hidden_box">
+        <label for="helpHome">(1) ホーム画面</label>
+        <input type="checkbox" id="helpHome" />
+        <div class="hidden_show">
+            <p>ホーム画面ではチェックリストを作成した会社の一覧が表示されます。<br>チェックが全て完了した会社は画面下部に表示されるようになります。<br>またチェックリストを確認しなければならない日時を登録すると、当日にその会社名を強調して表示することが出来ます。</p>
+        </div>
+    </div>
+
+    <div class="hidden_box">
+        <label for="helpActivity">(2) イベント画面</label>
+        <input type="checkbox" id="helpActivity" />
+        <div class="hidden_show">
+            <p>ホーム画面で会社を選択することで、その会社のイベントの一覧が表示されるイベント画面に移ります。<br>この画面ではイベントのチェックリストを確認する日時の登録や、新しくイベントを追加・削除することができます。<br>また、チェックリストの確認がすべて完了したイベントは画面下部に表示されるようになります。 
+            </p>
+        </div>
+    </div>
+
+    <div class="hidden_box">
+        <label for="helpChecklist">(3) チェックリスト画面</label>
+        <input type="checkbox" id="helpChecklist" />
+        <div class="hidden_show">
+            <p>イベント画面でイベントを選択すると、チェック項目が登録されたチェックリスト画面に移ります。<br>登録されたチェックリストの全ての項目にチェックがつけられると、画面左下にチェックマークが表示されます。<br>イベントを新しく登録した直後は、チェックリスト画面は空白なので新しくチェック項目を追加してください。
+            </p>
+        </div>
+    </div>
+
+    <div class="hidden_box">
+        <label for="helpAddTask">(4) 会社･イベントの登録</label>
+        <input type="checkbox" id="helpAddTask" />
+        <div class="hidden_show">
+            <p>ホーム画面左上のタブから｢新規登録｣ボタンを選択することで、新しく会社を登録することが出来ます。<br>会社の登録画面では｢会社名｣、｢イベント名｣を登録することが出来ます。<br>すでに登録している会社で新しくイベントを追加したい場合は、イベント画面下部の｢追加｣ボタンから新しくイベントを追加してください。<br>(会社・イベントはそれぞれ最大100個まで登録できます)<br>(会社名・イベント名は最大全角20文字まで表示できます
+            )
+            </p>
+    </div>
+
+    <div class="hidden_box">
+        <label for="helpDeleteTask">(5) 会社･イベントの削除</label>
+        <input type="checkbox" id="helpDeleteTask" />
+        <div class="hidden_show">
+            <p>ホーム画面左上のタブから｢削除｣ボタンを選択してから削除したい会社を選択することで、予定を登録した会社を削除することが出来ます。<br>この時、削除した会社の登録された情報は全て消えてしまうので注意してください。<br>個別にイベントを削除したいときは、ホーム画面で会社を選択してからイベント画面下部の｢削除｣ボタンを押して、削除したいイベントを選択してください。
+            </p>
+        </div>
+    </div>
+
+    <div class="hidden_box">
+        <label for="helpChangeChecklist">(6) チェック項目の追加・変更・削除</label>
+        <input type="checkbox" id="helpChangeChecklist" />
+        <div class="hidden_show">
+            <p>チェックリスト画面下部の｢追加｣ボタンを選択すると、テキストボックスが表示されます。内容を書き込んでから｢決定｣ボタンを押すことで、新しくチェック項目を追加することが出来ます。<br>また、｢追加｣ボタンを押すと｢お気に入り｣ボタンが表示されます。<br>｢お気に入り｣ボタンを押すと事前に登録したチェック項目が表示され、登録した項目を個別に追加することが出来ます。<br> チェック項目を削除する際には、｢変更｣ボタンを選択した後にチェック項目の横に｢削除｣ ボタンが表示されるので、削除したいチェック項目の横にある｢削除｣ボタンを選択してください。<br>(チェック項目は各イベント最大100個まで登録できます)<br>(チェック項目名は最大全角20文字まで表示できます。)
+            </p>
+        </div>
+    </div>
+
+    <div class="hidden_box">
+        <label for="helpCreatList">(7) チェック項目の｢テンプレート｣･｢お気に入り｣への登録</label>
+        <input type="checkbox" id="helpCreatList" />
+        <div class="hidden_show">
+            <p>ホーム画面左上のタブから｢設定｣を選択することで設定画面に移ります。<br>設定画面に表示される｢テンプレート設定｣、「チェック項目設定」からそれぞれチェック項目のテンプレートやお気に入り項目を設定することが出来ます。<br>テンプレートやお気に入り項目の登録は画面下部のテキストボックスに項目内容を入力して｢追加｣ボタンを選択することで出来ます。<br>また各項目の横の｢変更｣･｢削除｣ボタンを選択することで各項目を編集することが出来ます。<br>テンプレート設定画面ではテンプレート名を編集することも出来ます。<br>(テンプレート・お気に入り項目は、それぞれ最大100個まで登録できます)<br>(テンプレート名・お気に入り項目名は最大全角20文字まで表示できます)
+            </p>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./help.js"></script>
+    <script type="text/javascript" src="./utility.js"></script>
+</body>
+
+
+
+</html>

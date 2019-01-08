@@ -1,0 +1,22 @@
+#text1{
+    text-align:center;
+    text-decoration: underline;
+}
+
+#text2{
+    text-align:center;
+}
+
+#add{
+    text-align:center;
+}
+
+#change{
+    text-align:center;
+}
+
+#list{
+    text-align:left;
+    white-space: nowrap;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./checksetting.css">
+    <!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="">
+</head>
+
+<body onload = "loadBkm()" 
+      style="margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;">
+
+    <h2 id = "text1"> チェック項目設定画面 </h2>
+
+    <div id = "list"> </div>
+
+    <div id = "add"> <input type = "text" id = "task"/> <button onclick = "save()"> 追加 </button> </div> <br>
+    
+    <div id = "change"> <button onclick = "changeName()"> 変更 </button> </div> <br>
+
+    <h3 id = "text2"> <button onclick = "history_back()"> 戻る </button> </h3>
+
+    <script type="text/javascript" src="./checksetting.js"></script>
+    <script type="text/javascript" src="./utility.js"></script>
+</body>
+</html>

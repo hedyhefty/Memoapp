@@ -1,0 +1,44 @@
+.center {
+    padding: 10px;
+}
+
+.litctr{
+    padding-left: 10px;
+}
+
+.bigfont{
+    font-size: 22px;
+}
+
+.down{
+    padding-bottom: 20px;
+}
+
+div{
+    background-color: #efefef;
+}
+
+#topdiv{
+    padding-top: 22px;
+    background-color:gainsboro;
+}
+
+#backbtn{
+    margin-top: 10px;
+}
+
+.whiteFont{
+    color: white
+}
+
+#inputBar0{
+    margin-top: 10px;
+    background-color: #eaeaea;
+    padding-bottom: 15px;
+}
+
+#inputBar1{
+    margin-top: 10px;
+    background-color: #eaeaea;
+    padding-bottom: 15px;
+}

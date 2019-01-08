@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./act.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body onload="loadAct()">
+    <!-- Place your content here -->
+    <div class="container">
+        <div class="container">
+            <button onclick="backHome()" class="btn" id="wstBackBtn"><i class="fas fa-backward"></i> 戻る</button>
+            <h3 id="wsth3"><i class="fab fa-gulp"></i>AKIKO</h3>
+
+            
+        </div>
+        <div class="container wstpp">
+            <p>イベント</p>
+        </div>
+
+
+        <div id="unactData" class="container"></div>
+        <div class="container wstpp">
+            <p id="line">チェック済み</p>
+        </div>
+        
+        <div id="actData" class="container"></div>
+
+        <div id="add" class="container">
+            <button onclick="addBox()" class="btn"><i class="fas fa-plus"></i> 追加</button>
+        </div>
+
+        <div id="inputBox" class="container"></div>
+        <div id="templateName"></div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <div id="template"></div>
+            </div>
+
+        </div>
+
+        <div id="change" class="container">
+            <button onclick="change()" class="btn"><i class="fas fa-cut"></i> 変更</button>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="./act.js"></script>
+        <script type="text/javascript" src="./utility.js"></script>
+    </div>
+
+
+</body>
+
+
+
+</html>

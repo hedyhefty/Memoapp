@@ -1,0 +1,206 @@
+.HiddenCheckbox {
+    display: none;
+}
+
+.MenuContainer {
+    display: inline-block;
+    margin: 20px;
+    background-color: 
+}
+
+.MenuHeader {
+    color: #999999;
+    display: inline-block;
+    float: left;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 0 0 0 15px;
+    opacity: 0;
+    position: relative;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+    -webkit-transition: -webkit-transform 0.6s, opacity 0.5s;
+    transition: transform 0.6s, opacity 0.5s;
+    z-index: 2;
+}
+
+.MenuIcon {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 30px;
+    z-index: 2;
+    
+}
+
+.MenuIcon::before {
+    -webkit-box-shadow: #999999 0 12px 0;
+    box-shadow: #999999 0 12px 0;
+    height: 6px;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    width: 30px;
+    
+}
+
+.MenuIcon::after {
+    bottom: 0;
+    height: 6px;
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    width: 30px;
+}
+
+.MenuIcon::before,
+.MenuIcon::after {
+    background: #999999;
+    display: block;
+    content: '';
+    position: absolute;
+    -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.4s 0.2s;
+    transition: box-shadow 0.2s linear, transform 0.4s 0.2s;
+}
+
+.Menu {
+    background: #333;
+    bottom: 0;
+    left: -90%;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+}
+
+.HiddenCheckbox:checked ~ .MenuHeader {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+.HiddenCheckbox:checked ~ .MenuIcon::before {
+    -webkit-box-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0;
+    -webkit-transform: rotate(45deg) translate3d(6px, -3px, 0);
+    transform: rotate(45deg) translate3d(6px, -3px, 0);
+}
+
+.HiddenCheckbox:checked ~ .MenuIcon::after {
+    -webkit-transform: rotate(-45deg) translate3d(6px, 3px, 0);
+    transform: rotate(-45deg) translate3d(6px, 3px, 0);
+}
+
+.HiddenCheckbox:checked ~ .Menu {
+    left: 0;
+}
+
+.Menu-list {
+    list-style-type: none;
+    margin: 90px 0 0;
+    padding: 0;
+    color: #fff;
+}
+
+.Menu-new {
+    font-size: 20px;
+    margin: 40px 50px 0;
+}
+
+.Menu-setting {
+    font-size: 20px;
+    margin: 0px 50px 0;
+}
+
+.Menu-help {
+    font-size: 20px;
+    margin: 30px 50px 0;
+}
+
+.Menu-link {
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    padding: 0px 0x;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.Menu-button {
+    /* 文字サイズを20pxに指定 */
+    font-size: 20px;
+
+    /* 縦方向に30px、
+     * 横方向に50pxの余白を指定 */
+    margin: 30px 40px;
+
+    /* 背景色を濃い黒色に指定 */
+    background-color: #333;
+
+    /* 文字色を白色に指定 */
+    color: #fff;
+
+    /* ボーダーをなくす */
+    border-style: none;
+}
+
+#searchBtn{
+    /* 背景色を濃い水色に指定 */
+    background-color: aquamarine;
+    
+    /* ボーダーの色をslategrayに指定*/
+    border-color: slategray;
+    
+    /* 文字色を白色に指定 */
+    color: black;
+}
+
+#searchbox{
+    width: 130px;
+}
+
+#sort{
+    
+}
+
+/*wst made*/
+.btn-info.mbtn{
+    width:inherit;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#classOneContainer{
+    background-color:#ffffff;
+}
+
+#c1{
+    background-color: #299fb2;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#c2{
+    margin-top: 5px;
+    background-color: #299fb2;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+div{
+    background-color: #f7feff;
+}
+
+body{
+    background-color: #f7feff;
+}
+
+#hhh{
+    font-size: 50px;
+    color:#1e8596;
+}

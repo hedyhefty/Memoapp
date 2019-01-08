@@ -1,0 +1,44 @@
+#ButtontoTamplate {
+    width: 65%;
+    height: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+
+
+
+}
+
+#ButtontoBookmark {
+    width: 65%;
+    height: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+
+
+}
+
+#BackHome {
+    width: 65%;
+    height:30%;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    position: relative;
+    top: 300px;
+}
+
+#Button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
